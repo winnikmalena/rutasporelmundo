@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreEntrega 1 Winnik </title>
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img class="logoPrincipal" src="imagenes/logo-removebg-preview.png" alt="Logo de la página">
+            </a>
+            <h2 class="nombreBlog">Rutas del Mundo por Melanie</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/planifica.html">Planifica</a></li>
+                <li><a href="html/destinos.html">Destinos</a></li>
+                <li><a href="html/viajarsola.html">Viajar Sola</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div id="carouselExample" class="carousel slide porcion" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="fotoPrincipal" src="imagenes/mendoza.jpg" class="d-block w-100" alt="Foto 1">
+            </div>
+            <div class="carousel-item">
+                <img class="fotoPrincipal" src="imagenes/paisaje .jpg" class="d-block w-100" alt="Foto 2">
+            </div>
+            <div class="carousel-item">
+                <img class="fotoPrincipal" src="imagenes/mendoza1.jpg" class="d-block w-100" alt="Foto 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main>
+        <div class="principal">
+            <img class="fotoMelu" src="imagenes/melufoto.jpg" alt="¿Quien soy?">
+            <p class="parrafoPrin">Mi nombre es Melanie, tengo 26 años y soy de Buenos Aires, Argentina. Soy abogada
+                recibida de la Universidad de Buenos Aires. Mi verdadera pasión es viajar. Desde que soy muy chica
+                empecé a viajar y con el tiempo fui cambiando mi forma de hacerlo. Creo que viajar se aprende con el
+                tiempo porque viajando uno se enfrenta a situaciones que en la vida cotidiana no suceden. Viaje muchas
+                veces sola y eso me dió la posibilidad de conocer mucha gente de cualquier parte del mundo, perder la
+                verguenza, hablar en otros idiomas y sobretodo independencia y autonomía que solo aparece cuando una
+                viaja sola y tiene que tomar constantemente decisiones.
+                Espero que encuentren en este blog información que les sirva para viajar y animarse! Espero leerlos y
+                leerlas!
+            </p>
+        </div>
+
+    </main>
+
+
+    <div class="caja fondo">
+        <div class="item1" >
+            <h3 class="texto"><a class="enlace" href="html/planifica.html">Planifica</a></h3>
+        </div>
+
+        <div class="item2">
+            <h3 class="texto"><a class="enlace" href="html/viajarsola.html">Viajar Sola</a></h3>
+        </div>
+
+        <div  class="item3">
+           <h3 class="texto"><a class="enlace" href="html/destinos.html">Destinos</a></h3>
+        </div>
+    </div>
+
+    <section>
+        <h2>Encuentra tu próximo destino en este mapa</h2>
+        <p>En este mapa encontrarás TODOS los destinos sobre los que hay información publicada en el blog de
+            <span class="negra">#QuieroViajarSola</span></p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d54505046.806173556!2d3.555066!3d33.508556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1697595818133!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <footer >
+        <section class="linea">
+            <div>
+                <a href="html/destinos.html">
+                    <h4 class="footerT">Paises para viajar sola. </h4>
+                </a>
+
+                <ul class="footerP">
+                    <li>España</li>
+                    <li>Italia</li>
+                    <li>Estados Unidos</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footerT">Tips para viajar sola</h4>
+                <ul class="footerP">
+                    <li>Inspiración para viajar sola </li>
+                    <li>Dónde viajar sola</li>
+                    <li> Organiza tu viaje sola</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footerT">Principales atracciones turísticas</h4>
+                <ul class="footerP">
+                    <li>todavia nose</li>
+                    <li>dos</li>
+                    <li>tres</li>
+                </ul>
+            </div>
+
+        </section>
+    
+
+        <form  class="espacio">
+            <label class="footerF " for="Nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" id=Nombre>
+
+            <label class="footerF" for="correo">Email</label>
+            <input class="input" type="text" placeholder="Email" id="correo">
+
+            <button type="button" class="btn btnBlog1 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+               Suscribirse
+            </button>
+        </form>
+        <div>
+            <p class="formuP">Los datos de carácter personal serán tratados de forma segura, cumpliendo con el RGPD
+                (Reglamento General
+                de Protección de Datos). Podrás ejercer tus derechos de acceso, rectificación, limitación y eliminación
+                definitiva de los datos. Más información en nuestra política de privacidad.</p>
+        </div>
+
+        <section class="pie">
+            <p>@Todos los derechos reservados <br><br> Dirección: Malena Winnik</p>
+        </section>
+
+    </footer>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Enterate de nuevas experiencias</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estas seguro que te queres suscribir?
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btnBlog" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnBlog">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+/* Header */
+
+header {
+    text-align: center;
+    border-bottom: 1px black solid;
+    padding: 5px 20px;
+    background-color: rgb(163, 150, 163);
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header ul li a:hover {
+    color: rgb(101, 101, 101);
+
+}
+
+header div h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(64, 63, 64);
+
+}
+
+.logoPrincipal {
+    width: 120px;
+    height: 120px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* Foto del paisaje antes del main  */
+
+.fotoPrincipal {
+    width: 100%;
+    height: 500px;
+}
+
+/* Main  */
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 25px;
+}
+
+main {
+    position: relative;
+}
+
+.fotoMelu {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.parrafoPrin {
+    background-color: rgb(163, 150, 163);
+    margin: 0 0 0 15px;
+    border: 3px black solid;
+    text-align: start;
+    padding: 50px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: justify;
+    box-shadow: 4px 4px;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+/* Contenedor 3 cajas */
+.caja {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 70px 0px 70px 170px;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.item1 {
+    background-image: url(../imagenes/planificar.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border: 10px rgb(163, 150, 163) double;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.texto {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.804);
+    font-weight: 400;
+    margin-top: 90px;
+    padding: 10px;
+}
+
+.enlace {
+    color: rgb(0, 0, 0);
+}
+
+.item2 {
+    background-image: url(../imagenes/viajarsola.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border: 10px rgb(163, 150, 163) double;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.item3 {
+    background-image: url(../imagenes/destiny.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border: 10px rgb(163, 150, 163) double;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Section */
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px black solid;
+    background-color: rgb(163, 150, 163);
+    padding: 5px 10px;
+
+}
+
+/* footer section div */
+.linea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    border: 6px black double;
+    padding-top: 15px;
+    box-shadow: 6px 5px;
+}
+
+.footerT {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+
+.footerP {
+    text-align: center;
+    list-style-position: inside;
+    margin: 15px;
+}
+
+.espacio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footerF {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+    background-color: rgb(64, 63, 64);
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: rgb(163, 150, 163);
+    cursor: pointer;
+
+
+
+}
+
+.formuP {
+    margin: 20px;
+    font-size: 15px;
+    text-align: baseline;
+
+}
+
+.input {
+    border: 2px rgb(0, 0, 0) solid;
+}
+
+
+
+.btnBlog1 {
+    background-color: rgb(64, 63, 64);
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-left: 200px;
+    color: rgb(163, 150, 163);
+}
+
+.btnBlog {
+    background-color: rgb(64, 63, 64);
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(163, 150, 163);
+
+}
+
+.btnBlog1:hover {
+    background-color: rgb(105, 104, 105);
+}
+
+.espacio {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.pie p {
+    font-size: 15px;
+
+}
+
+/* Enlaces */
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Imagenes */
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Mapa */
+
+iframe {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    display: block;
+}
+
+/* HTML Destino */
+
+main h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: rgb(126, 91, 126);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mapa {
+    font-size: 25px;
+    text-align: center;
+    margin: 15px 5px;
+    border: 5px rgb(163, 150, 163) double;
+}
+
+.continentes {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    text-decoration: underline rgb(163, 150, 163);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* HTML Planificar */
+/* main */
+
+.planificarP p {
+    margin: 20px 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+/* div */
+
+.hTitulo {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    border: 2px black solid;
+    background-color: rgb(163, 150, 163);
+    border-radius: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hSubtitulo {
+    text-decoration: underline;
+    font-size: 25px;
+    margin: 5px;
+    font-variant: small-caps;
+}
+
+.textoP {
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: 5px 10px 5px 5px;
+}
+
+/* HTML Viajar Sola */
+
+.viajarS {
+    text-align:center ;
+    margin: 10px  25px;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.subtituloV {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 3px rgb(163, 150, 163) dashed;
+    border-bottom: 3px rgb(163, 150, 163) dashed;
+    font-weight: 550;
+    color: rgb(77, 10, 77);
+    
+}
+
+.principalSola {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    
+}
+.uno h4{
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.uno p{
+    text-align: justify;
+    margin: 10px 20px;
+}
+.uno{
+    background-color: rgba(163, 150, 163, 0.2);
+    border: 1px black solid;
+    margin: 20px;
+}
+
+/* HTML Contacto */
+
+.imagenContacto {
+    background-image: url(../imagenes/mapa1.png);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.contactoC {
+    text-align: center;
+    margin: 15px 0px 20px 0px;
+}
+
+.contactoC h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: rgb(126, 91, 126);
+}
+
+.negra {
+    font-weight: bold;
+}
+
+.formc {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formc h3 {
+    font-size: 25px;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.labelC {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin: 15px 0px;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    display: center;
+    border: 3px black solid;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formularioB {
+    background-color: rgb(163, 150, 163);
+    border: 1px black solid;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Lo hacemos responsive */
+/* Vista Tablet 768 a 1023 */
+
+@media (max-width: 1023px) {
+
+    /* Header */
+    header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+
+    .logoPrincipal {
+        width: 100px;
+        height: 100px;
+    }
+
+    header div h2 {
+        font-size: 15px;
+    }
+
+    header nav ul li {
+        font-size: 15px;
+        display: inline;
+        margin-top: 10px;
+    }
+
+    .caja {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 50%;
+        margin-right: 50%;
+
+    }
+
+    .parrafoPrin {
+        display: flex;
+        justify-content: row;
+        align-items: start;
+        font-size: 15px;
+        padding: 5px 7px;
+        border-radius: 3px;
+        letter-spacing: 1px;
+    }
+
+    .espacio {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .btnBlog1 {
+        margin-left: 0;
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    .footerF {
+        margin: 10px 0;
+    }
+
+    .formuP {
+        text-align: center;
+    }
+
+}
+
+/* movil */
+@media (max-width: 768px) {
+
+    /* Footer */
+    .linea {
+        display: none;
+    }
+
+    .fotoMelu {
+        position: absolute;
+        top: 0;
+        left: 4;
+        z-index: 2;
+    }
+
+    .parrafoPrin {
+        position: relative;
+        z-index: 1;
+        margin-top: 200px;
+    }
+
+    header nav ul li {
+        margin-left: 1px;
+        margin-right: 3px;
+        border-left: 2px rgb(64, 63, 64) solid;
+        padding-left: 3px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .viajarS{
+        font-size: 15px;
+        text-align: center;
+    }
+    .principalSola{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
