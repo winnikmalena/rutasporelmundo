@@ -1,0 +1,38 @@
+/* HTML Planificar */
+/* main */
+
+.planificarP {
+    p {
+        margin: 20px 20px;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
+}
+
+/* div */
+
+.pasos {
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        border: 2px black solid;
+        background-color: rgb(163, 150, 163);
+        border-radius: 22px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h3 {
+        text-decoration: underline;
+        font-size: 25px;
+        margin: 5px;
+        font-variant: small-caps;
+    }
+
+    p {
+        text-align: justify;
+        letter-spacing: 1px;
+        margin: 5px 10px 5px 5px;
+    }
+}

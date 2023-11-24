@@ -1,0 +1,45 @@
+/* HTML Viajar Sola */
+
+.viajarSola {
+    p {
+        text-align: center;
+        margin: 10px 25px;
+        font-size: 20px;
+        font-family: 'Arimo', sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+        border-top: 3px rgb(163, 150, 163) dashed;
+        border-bottom: 3px rgb(163, 150, 163) dashed;
+        font-weight: 550;
+        color: rgb(77, 10, 77);
+    }
+
+    .principalSola {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+
+        .uno {
+            
+            background-color: rgba(163, 150, 163, 0.2);
+            border: 1px black solid;
+            margin: 20px;
+
+            h4 {
+                text-align: center;
+                margin-top: 10px;
+                text-decoration: underline;
+            }
+
+            p {
+                text-align: justify;
+                margin: 10px 20px;
+            }
+        }
+
+    }
+
+}

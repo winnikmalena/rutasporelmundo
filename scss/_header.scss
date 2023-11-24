@@ -1,0 +1,58 @@
+//HEADER
+
+header {
+    text-align: center;
+    border-bottom: 1px black solid;
+    padding: 5px 20px;
+    background-color: rgb(163, 150, 163);
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    nav {
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+            font-size: 20px;
+            
+
+            a {
+                color: black;
+                
+
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    div{
+        h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(64, 63, 64);
+        }
+        a{
+            .logoPrincipal {
+                width: 120px;
+                height: 120px;
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+/* Footer */
+
+footer {
+    border-top: 1px black solid;
+    background-color: rgb(163, 150, 163);
+    padding: 5px 10px;
+    .linea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px;
+        border: 6px black double;
+        padding-top: 15px;
+        box-shadow: 6px 5px;
+        .footerT {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 20px;
+            margin: 0px 0px 20px 0px;
+            cursor: pointer;
+        }
+        .footerP {
+            text-align: center;
+            list-style-position: inside;
+            margin: 15px;
+        }
+    }
+    .espacio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        text-align: center;
+        .footerF {
+            font-size: 20px;
+            text-align: center;
+            margin: 0px 0px 0px 20px;
+            background-color: rgb(64, 63, 64);
+            padding: 5px;
+            font-weight: 600;
+            border-radius: 15px;
+            color: rgb(163, 150, 163);
+            cursor: pointer;
+        }
+        .input {
+            border: 2px rgb(0, 0, 0) solid;
+        }
+        .btnBlog1 {
+            background-color: rgb(64, 63, 64);
+            padding: 5px;
+            font-weight: 600;
+            border-radius: 15px;
+            margin-left: 200px;
+            color: rgb(163, 150, 163);
+
+            &:hover{
+                background-color: rgb(105, 104, 105);
+            }
+        }
+    
+    }
+    div{
+        .formuP {
+            margin: 20px;
+            font-size: 15px;
+            text-align: baseline;
+        
+        }
+    }
+    .pie {
+        p {
+            font-size: 15px;
+        }
+    }
+
+}
+
+//MODAL
+.btnBlog {
+    background-color: rgb(64, 63, 64);
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(163, 150, 163);
+
+}
+
+
+

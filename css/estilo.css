@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px black solid;
+  padding: 5px 20px;
+  background-color: rgb(163, 150, 163);
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  font-size: 20px;
+}
+header nav li a {
+  color: black;
+}
+header nav li a:hover {
+  background-color: white;
+}
+header div h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(64, 63, 64);
+}
+header div a .logoPrincipal {
+  width: 120px;
+  height: 120px;
+}
+
+/* Foto del paisaje antes del main  */
+.fotoPrincipal {
+  width: 100%;
+  height: 500px;
+}
+
+/* Main  */
+main {
+  position: relative;
+}
+main .principal {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 25px;
+}
+main .principal .fotoMelu {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+main .principal .parrafoPrin {
+  background-color: rgb(163, 150, 163);
+  margin: 0 0 0 15px;
+  border: 3px black solid;
+  text-align: start;
+  padding: 50px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: justify;
+  box-shadow: 4px 4px;
+  font-family: "Arimo", sans-serif;
+}
+
+/* Contenedor 3 cajas */
+.caja {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 70px 0px 70px 170px;
+  justify-content: center;
+  gap: 20px;
+}
+.caja .item1 {
+  background-image: url(../imagenes/planificar.jpg);
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  border: 10px rgb(163, 150, 163) double;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.caja .item1 .texto {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.804);
+  font-weight: 400;
+  margin-top: 90px;
+  padding: 10px;
+}
+.caja .item1 .texto .enlace {
+  color: rgb(0, 0, 0);
+}
+.caja .item2 {
+  background-image: url(../imagenes/viajarsola.jpg);
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  border: 10px rgb(163, 150, 163) double;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.caja .item2 .texto {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.804);
+  font-weight: 400;
+  margin-top: 90px;
+  padding: 10px;
+}
+.caja .item2 .texto .enlace {
+  color: rgb(0, 0, 0);
+}
+.caja .item3 {
+  background-image: url(../imagenes/destiny.jpg);
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  border: 10px rgb(163, 150, 163) double;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.caja .item3 .texto {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.804);
+  font-weight: 400;
+  margin-top: 90px;
+  padding: 10px;
+}
+.caja .item3 .texto .enlace {
+  color: rgb(0, 0, 0);
+}
+
+/* Section */
+section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+}
+section p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* Imagenes */
+img {
+  width: 250px;
+  height: 250px;
+}
+
+/* Mapa */
+iframe {
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  display: block;
+}
+
+/* Footer */
+footer {
+  border-top: 1px black solid;
+  background-color: rgb(163, 150, 163);
+  padding: 5px 10px;
+}
+footer .linea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  border: 6px black double;
+  padding-top: 15px;
+  box-shadow: 6px 5px;
+}
+footer .linea .footerT {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+  margin: 0px 0px 20px 0px;
+  cursor: pointer;
+}
+footer .linea .footerP {
+  text-align: center;
+  list-style-position: inside;
+  margin: 15px;
+}
+footer .espacio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  text-align: center;
+}
+footer .espacio .footerF {
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 0px 0px 20px;
+  background-color: rgb(64, 63, 64);
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 15px;
+  color: rgb(163, 150, 163);
+  cursor: pointer;
+}
+footer .espacio .input {
+  border: 2px rgb(0, 0, 0) solid;
+}
+footer .espacio .btnBlog1 {
+  background-color: rgb(64, 63, 64);
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 15px;
+  margin-left: 200px;
+  color: rgb(163, 150, 163);
+}
+footer .espacio .btnBlog1:hover {
+  background-color: rgb(105, 104, 105);
+}
+footer div .formuP {
+  margin: 20px;
+  font-size: 15px;
+  text-align: baseline;
+}
+footer .pie p {
+  font-size: 15px;
+}
+
+.btnBlog {
+  background-color: rgb(64, 63, 64);
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: rgb(163, 150, 163);
+}
+
+/* HTML Destino */
+main h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: rgb(126, 91, 126);
+  font-family: "Montserrat", sans-serif;
+}
+main .mapa {
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 5px;
+  border: 5px rgb(163, 150, 163) double;
+}
+main .continentes {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 30px;
+  text-decoration: underline rgb(163, 150, 163);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* HTML Planificar */
+/* main */
+.planificarP p {
+  margin: 20px 20px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+/* div */
+.pasos h2 {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  border: 2px black solid;
+  background-color: rgb(163, 150, 163);
+  border-radius: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.pasos h3 {
+  text-decoration: underline;
+  font-size: 25px;
+  margin: 5px;
+  font-variant: small-caps;
+}
+.pasos p {
+  text-align: justify;
+  letter-spacing: 1px;
+  margin: 5px 10px 5px 5px;
+}
+
+/* HTML Viajar Sola */
+.viajarSola p {
+  text-align: center;
+  margin: 10px 25px;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+}
+.viajarSola h2 {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 3px rgb(163, 150, 163) dashed;
+  border-bottom: 3px rgb(163, 150, 163) dashed;
+  font-weight: 550;
+  color: rgb(77, 10, 77);
+}
+.viajarSola .principalSola {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+}
+.viajarSola .principalSola .uno {
+  background-color: rgba(163, 150, 163, 0.2);
+  border: 1px black solid;
+  margin: 20px;
+}
+.viajarSola .principalSola .uno h4 {
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.viajarSola .principalSola .uno p {
+  text-align: justify;
+  margin: 10px 20px;
+}
+
+/* HTML Contacto */
+.imagenContacto {
+  background-image: url(../imagenes/mapa1.png);
+  background-repeat: repeat-x;
+  background-position: center;
+}
+.imagenContacto .contactoC {
+  text-align: center;
+  margin: 15px 0px 20px 0px;
+}
+.imagenContacto .contactoC h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: rgb(126, 91, 126);
+}
+.imagenContacto .contactoC .negra {
+  font-weight: bold;
+}
+.imagenContacto form {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.imagenContacto form h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+.imagenContacto form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  margin: 15px 0px;
+  font-weight: 700;
+}
+.imagenContacto form input,
+.imagenContacto form textarea {
+  display: center;
+  border: 3px black solid;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.imagenContacto form .formularioB {
+  background-color: rgb(163, 150, 163);
+  border: 1px black solid;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Lo hacemos responsive */
+/* Vista Tablet 768 a 1023 */
+@media (max-width: 1024px) {
+  /* Header */
+  header {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+  }
+  header div h2 {
+    font-size: 15px;
+  }
+  header nav li {
+    font-size: 15px;
+    display: inline;
+    margin-top: 10px;
+  }
+  header div a .logoPrincipal {
+    width: 100px;
+    height: 100px;
+  }
+  .caja {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  main .principal .parrafoPrin {
+    display: flex;
+    justify-content: row;
+    align-items: start;
+    font-size: 15px;
+    padding: 5px 7px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+  }
+  footer .espacio {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+  footer .espacio .btnBlog1 {
+    margin-left: 0;
+    margin-top: 10px;
+    align-self: center;
+  }
+  footer .espacio .footerF {
+    margin: 10px 0;
+  }
+  footer div .formuP {
+    text-align: center;
+  }
+}
+/* movil */
+@media (max-width: 768px) {
+  /* Footer */
+  footer .linea {
+    display: none;
+  }
+  main .principal .fotoMelu {
+    position: absolute;
+    top: 0;
+    left: 4;
+    z-index: 2;
+  }
+  main .principal .parrafoPrin {
+    position: relative;
+    z-index: 1;
+    margin-top: 200px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav li {
+    margin-left: 1px;
+    margin-right: 3px;
+    border-left: 2px rgb(64, 63, 64) solid;
+    padding-left: 3px;
+  }
+  .viajarSola p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .viajarSola .principalSola {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
