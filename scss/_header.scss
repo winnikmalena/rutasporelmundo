@@ -14,27 +14,34 @@ header {
     align-items: center;
 
     nav {
-        li {
-            list-style: none;
-            display: inline-block;
-            margin: 20px;
-            font-size: 15px;
-            font-weight: bold;
-            
-
-            a {
-                color: black;
+        div{
+            li {
+                list-style: none;
+                display: inline-block;
+                margin: 20px;
+                font-size: 15px;
+                font-weight: bold;
                 
+    
+                a {
+                    color: black;
+                    
+    
+                    &:hover {
+                        background-color: white;
+                    }
+                }
 
-                &:hover {
-                    background-color: white;
+                ul{
+                    li{
+                        .agregar{
+                            background-color:rgb(163, 150, 163) ;
+                        }
+                    }
                 }
             }
-
-            .agregar{
-                background-color:rgb(163, 150, 163) ;
-            }
         }
+        
     }
 
     div{
