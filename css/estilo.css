@@ -17,17 +17,24 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-header nav li {
+header nav div li {
   list-style: none;
   display: inline-block;
   margin: 20px;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
 }
-header nav li a {
+header nav div li a {
   color: black;
 }
-header nav li a:hover {
+header nav div li a:hover {
   background-color: white;
+  border-radius: 5px;
+}
+header nav div li ul .agrandar {
+  background-color: rgb(163, 150, 163);
+  width: 100%;
+  left: 0;
 }
 header div h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -408,7 +415,7 @@ main .continentes {
 
 /* Lo hacemos responsive */
 /* Vista Tablet 768 a 1023 */
-@media (max-width: 1024px) {
+@media (max-width: 1044px) {
   /* Header */
   header {
     height: auto;
