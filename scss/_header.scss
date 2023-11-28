@@ -14,61 +14,54 @@ header {
     align-items: center;
 
     nav {
-        div{
+        div {
             li {
                 list-style: none;
                 display: inline-block;
                 margin: 20px;
                 font-size: 15px;
                 font-weight: bold;
-                
-    
+
+
                 a {
                     color: black;
-                    
-    
+
+
                     &:hover {
                         background-color: white;
                         border-radius: 5px;
                     }
                 }
 
-                ul{
-                    li{
-                        .agregar{
-                            background-color:rgb(163, 150, 163) ;
-                        }
+                ul {
+
+                    .agrandar {
+                        background-color: rgb(163, 150, 163);
+                        width: 100%;
+                        left: 0;
                     }
+
                 }
             }
         }
-        
-    }
-    .agregar{
-        background-color:rgb(163, 150, 163) ;
+
     }
 
-    div{
-        h2{
+    div {
+        h2 {
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-transform: capitalize;
             font-size: 25px;
             font-weight: bold;
             color: rgb(64, 63, 64);
         }
-        a{
+
+        a {
             .logoPrincipal {
                 width: 120px;
                 height: 120px;
             }
-            
+
         }
     }
 }
-
-
-
-
-
-
-
