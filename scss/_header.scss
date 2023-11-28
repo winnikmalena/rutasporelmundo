@@ -29,6 +29,7 @@ header {
     
                     &:hover {
                         background-color: white;
+                        border-radius: 5px;
                     }
                 }
 
@@ -42,6 +43,9 @@ header {
             }
         }
         
+    }
+    .agregar{
+        background-color:rgb(163, 150, 163) ;
     }
 
     div{
