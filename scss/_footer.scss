@@ -2,7 +2,7 @@
 
 footer {
     border-top: 1px black solid;
-    background-color: rgb(163, 150, 163);
+    background-color: $color;
     padding: 5px 10px;
     .linea {
         display: flex;
@@ -13,34 +13,33 @@ footer {
         padding-top: 15px;
         box-shadow: 6px 5px;
         .footerT {
-            text-align: center;
+            text-align: $centro;
             text-decoration: underline;
             font-size: 20px;
             margin: 0px 0px 20px 0px;
             cursor: pointer;
         }
         .footerP {
-            text-align: center;
+            text-align: $centro;
             list-style-position: inside;
             margin: 15px;
         }
     }
     .espacio {
-        display: flex;
+        @include anclas;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        justify-content: $centro;
         margin-top: 80px;
-        text-align: center;
+        text-align: $centro;
         .footerF {
             font-size: 20px;
-            text-align: center;
+            text-align:$centro;
             margin: 0px 0px 0px 20px;
             background-color: rgb(64, 63, 64);
             padding: 5px;
             font-weight: 600;
             border-radius: 15px;
-            color: rgb(163, 150, 163);
+            color:$color;
             cursor: pointer;
         }
         .input {
@@ -52,7 +51,7 @@ footer {
             font-weight: 600;
             border-radius: 15px;
             margin-left: 200px;
-            color: rgb(163, 150, 163);
+            color: $color;
 
             &:hover{
                 background-color: rgb(105, 104, 105);
@@ -82,7 +81,7 @@ footer {
     padding: 5px;
     font-weight: 600;
     border-radius: 5px;
-    color: rgb(163, 150, 163);
+    color: $color;
 
 }
 

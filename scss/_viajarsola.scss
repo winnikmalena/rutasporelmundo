@@ -2,17 +2,17 @@
 
 .viajarSola {
     p {
-        text-align: center;
+        text-align: $centro;
         margin: 10px 25px;
         font-size: 20px;
         font-family: 'Arimo', sans-serif;
     }
 
     h2 {
-        text-align: center;
+        text-align: $centro;
         margin-top: 20px;
-        border-top: 3px rgb(163, 150, 163) dashed;
-        border-bottom: 3px rgb(163, 150, 163) dashed;
+        border-top: 3px $color dashed;
+        border-bottom: 3px $color dashed;
         font-weight: 550;
         color: rgb(77, 10, 77);
     }
@@ -29,7 +29,7 @@
             margin: 20px;
 
             h4 {
-                text-align: center;
+                text-align: $centro;
                 margin-top: 10px;
                 text-decoration: underline;
             }

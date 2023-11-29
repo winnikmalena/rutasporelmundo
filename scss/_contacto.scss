@@ -3,15 +3,15 @@
 .imagenContacto {
     background-image: url(../imagenes/mapa1.png);
     background-repeat: repeat-x;
-    background-position: center;
+    background-position: $centro;
 
     .contactoC {
-        text-align: center;
+        text-align: $centro;
         margin: 15px 0px 20px 0px;
 
         h1 {
             font-family: 'Montserrat', sans-serif;
-            text-align: center;
+            text-align: $centro ;
             text-decoration: underline;
             font-size: 30px;
             margin-top: 30px;
@@ -20,20 +20,20 @@
         }
 
         .negra {
-            font-weight: bold;
+            font-weight: $negra;
         }
     }
 
     form {
         margin-top: 20px;
-        text-align: center;
+        text-align: $centro;
         margin-bottom: 20px;
 
         h3 {
             font-size: 25px;
             text-decoration: underline;
             color: black;
-            font-weight: bold;
+            font-weight: $negra;
         }
 
         label {
@@ -46,13 +46,13 @@
 
         input,
         textarea {
-            display: center;
+            display: $centro;
             border: 3px black solid;
             border-radius: 5px;
             font-size: 16px;
         }
         .formularioB {
-            background-color: rgb(163, 150, 163);
+            background-color: $color;
             border: 1px black solid;
             padding: 5px;
             font-weight: 600;

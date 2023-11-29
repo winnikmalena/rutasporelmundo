@@ -4,7 +4,9 @@
   padding: 0;
 }
 
-header {
+.encabezado {
+  display: flex;
+  align-items: center;
   text-align: center;
   border-bottom: 1px black solid;
   padding: 5px 20px;
@@ -13,37 +15,30 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
 }
-header nav div li {
+.encabezado nav li {
   list-style: none;
   display: inline-block;
   margin: 20px;
   font-size: 15px;
   font-weight: bold;
 }
-header nav div li a {
+.encabezado nav li a {
   color: black;
 }
-header nav div li a:hover {
-  background-color: white;
-  border-radius: 5px;
+.encabezado nav li a:hover {
+  text-decoration: underline white;
+  opacity: 60%;
 }
-header nav div li ul .agrandar {
-  background-color: rgb(163, 150, 163);
-  width: 100%;
-  left: 0;
-}
-header div h2 {
+.encabezado div h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: capitalize;
   font-size: 25px;
   font-weight: bold;
   color: rgb(64, 63, 64);
 }
-header div a .logoPrincipal {
+.encabezado div a .logoPrincipal {
   width: 120px;
   height: 120px;
 }
@@ -60,8 +55,8 @@ main {
 }
 main .principal {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  align-content: center;
   padding: 25px;
 }
 main .principal .fotoMelu {
@@ -169,6 +164,9 @@ section p {
   font-size: 20px;
   margin-bottom: 20px;
 }
+section p span {
+  font-weight: bold;
+}
 
 /* Enlaces */
 a {
@@ -219,9 +217,9 @@ footer .linea .footerP {
 }
 footer .espacio {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   margin-top: 80px;
   text-align: center;
 }
@@ -291,13 +289,44 @@ main .continentes {
   text-transform: uppercase;
   cursor: pointer;
 }
+@keyframes texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+main .mapas {
+  border: 3px black groove;
+  margin: 30px;
+  text-align: center;
+  background-image: linear-gradient(to left, #AD98AE, #564271);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  animation-name: texto;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+}
+main .mapas h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: 10px;
+}
+main .mapas a {
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
 
 /* HTML Planificar */
 /* main */
 .planificarP p {
-  margin: 20px 20px;
+  margin: 20px 30px;
   letter-spacing: 2px;
-  text-align: justify;
+  text-align: center;
+  text-shadow: 4px 6px 7px rgb(163, 150, 163);
 }
 
 /* div */
@@ -310,16 +339,21 @@ main .continentes {
   border-radius: 22px;
   font-family: "Montserrat", sans-serif;
 }
-.pasos h3 {
-  text-decoration: underline;
+.pasos .cuadrado {
+  border: 2px rgb(163, 150, 163) dashed;
+  margin: 5px;
+  text-align: center;
+}
+.pasos .cuadrado h3 {
+  text-decoration: underline rgb(163, 150, 163);
   font-size: 25px;
   margin: 5px;
   font-variant: small-caps;
 }
-.pasos p {
+.pasos .cuadrado p {
   text-align: justify;
   letter-spacing: 1px;
-  margin: 5px 10px 5px 5px;
+  margin: 20px;
 }
 
 /* HTML Viajar Sola */
@@ -419,9 +453,11 @@ main .continentes {
   /* Header */
   header {
     height: auto;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     text-align: center;
-    display: flex;
+    justify-content: space-evenly;
   }
   header div h2 {
     font-size: 15px;
@@ -469,6 +505,9 @@ main .continentes {
 }
 /* movil */
 @media (max-width: 768px) {
+  .encabezado .menuNav li {
+    border: white;
+  }
   /* Footer */
   footer .linea {
     display: none;

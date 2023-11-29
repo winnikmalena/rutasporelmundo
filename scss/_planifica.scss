@@ -3,9 +3,10 @@
 
 .planificarP {
     p {
-        margin: 20px 20px;
+        margin: 20px 30px;
         letter-spacing: 2px;
-        text-align: justify;
+        text-align: $centro;
+        text-shadow: 4px 6px 7px $color;
     }
 
 }
@@ -13,26 +14,38 @@
 /* div */
 
 .pasos {
+
     h2 {
-        text-align: center;
-        font-weight: bold;
+        text-align:$centro;
+        font-weight: $negra;
         color: black;
         border: 2px black solid;
-        background-color: rgb(163, 150, 163);
+        background-color: $color;
         border-radius: 22px;
         font-family: 'Montserrat', sans-serif;
+
     }
 
-    h3 {
-        text-decoration: underline;
-        font-size: 25px;
+    .cuadrado {
+        border: 2px $color dashed ;
         margin: 5px;
-        font-variant: small-caps;
+        text-align: $centro;
+      
+        h3 {
+            text-decoration: underline $color;
+            font-size: 25px;
+            margin: 5px;
+            font-variant: small-caps;
+
+        }
+    
+        
+
+        p {
+            text-align: justify;
+            letter-spacing: 1px;
+            margin: 20px;
+        }
     }
 
-    p {
-        text-align: justify;
-        letter-spacing: 1px;
-        margin: 5px 10px 5px 5px;
-    }
 }

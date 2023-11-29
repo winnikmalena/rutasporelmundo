@@ -9,6 +9,8 @@
         content="Rutas del Mundo por Melanie es un blog en donde se charla y se explica como lograr expandir tu camino por el mundo. Emprende la aventura de viajar sola por el mundo. Descubre destinos asombrosos, obtén consejos para tu travesía en solitario y conoce qué elementos esenciales llevar contigo. Encuentra la inspiración para explorar nuevos horizontes y sumérgete en la libertad de descubrir lugares increíbles por tu cuenta. En este blog encontraras todo esto y más.">
     <meta name="keywords"
         content="viajar sola, lugares para viajar, viaje en solitario, destinos inolviables, conocer gente, consejos de viaje, equipaje para viajar solo">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS BT -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -17,55 +19,29 @@
 </head>
 
 <body>
-    <header>
+    <header class="navbar navbar-expand-lg encabezado">
         <div>
             <a href="index.html">
                 <img class="logoPrincipal" src="imagenes/logo-removebg-preview.png" alt="Logo de la página">
             </a>
-            <h2 class="nombreBlog">Rutas del Mundo por Melanie</h2>
-        </div> 
+            <h2>Rutas del Mundo por Melanie</h2>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="imagenes/logo-removebg-preview.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a  href="html/planifica.html">Planifica</a></li>
-                    <li><a class=" nav-link dropdown-toggle fw-bold" href="html/destinos.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"> Destinos </a>
-                        <ul class="dropdown-menu agrandar">
-                            <li><a class="dropdown-item fs-6 fw-bold" href="#">Francia</a></li>
-                            <li><a class="dropdown-item fs-6 fw-bold" href="#">Alemania</a></li>
-                            <li><a class="dropdown-item fs-6 fw-bold" href="#">Bariloche</a></li>
-                        </ul>
-                    </li>
-                    <li> <a href="html/viajarsola.html">Viajar Sola</a></li>
-                    <li> <a href="html/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/planifica.html">Planifica</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="html/destinos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Destinos</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html/planifica.html">Planifica</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html/destinos.html"> Destinos </a></li>
+                <li class="nav-item"> <a class="nav-link" href="html/viajarsola.html">Viajar Sola</a></li>
+                <li class="nav-item"> <a class="nav-link" aria-disabled="true" href="html/contacto.html">Contacto</a>
                 </li>
-                <li><a href="html/viajarsola.html">Viajar Sola</a></li>
-                <li><a href="html/contacto.html">Contacto</a></li>
             </ul>
 
-        </nav> -->
+        </nav>
     </header>
 
     <div id="carouselExample" class="carousel slide porcion" data-ride="carousel">
@@ -108,15 +84,15 @@
 
 
     <div class="caja">
-        <div class="item1">
+        <div class="item1" data-aos="zoom-in">
             <h3 class="texto"><a class="enlace" href="html/planifica.html">Planifica</a></h3>
         </div>
 
-        <div class="item2">
+        <div class="item2" data-aos="zoom-in">
             <h3 class="texto"><a class="enlace" href="html/viajarsola.html">Viajar Sola</a></h3>
         </div>
 
-        <div class="item3">
+        <div class="item3" data-aos="zoom-in">
             <h3 class="texto"><a class="enlace" href="html/destinos.html">Destinos</a></h3>
         </div>
     </div>
@@ -157,9 +133,9 @@
             <div>
                 <h4 class="footerT">Principales atracciones turísticas</h4>
                 <ul class="footerP">
-                    <li>todavia nose</li>
-                    <li>dos</li>
-                    <li>tres</li>
+                    <li>La Torre Effiel</li>
+                    <li>El Coliseo</li>
+                    <li>El Gran Cañon</li>
                 </ul>
             </div>
 
@@ -216,6 +192,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- AOS LIBRERIA -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

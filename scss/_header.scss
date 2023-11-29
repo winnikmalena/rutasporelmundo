@@ -1,48 +1,41 @@
 //HEADER
 
-header {
-    text-align: center;
+.encabezado {
+    @include anclas;
+    text-align: $centro;
     border-bottom: 1px black solid;
     padding: 5px 20px;
-    background-color: rgb(163, 150, 163);
+    background-color: $color;
     text-transform: uppercase;
     position: sticky;
     top: 0;
     z-index: 10;
-    display: flex;
+   
     justify-content: space-around;
-    align-items: center;
+    
 
     nav {
-        div {
-            li {
-                list-style: none;
-                display: inline-block;
-                margin: 20px;
-                font-size: 15px;
-                font-weight: bold;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+            font-size: 15px;
+            font-weight: $negra;
 
 
-                a {
-                    color: black;
+            a {
+                color: black;
 
 
-                    &:hover {
-                        background-color: white;
-                        border-radius: 5px;
-                    }
-                }
-
-                ul {
-
-                    .agrandar {
-                        background-color: rgb(163, 150, 163);
-                        width: 100%;
-                        left: 0;
-                    }
-
+                &:hover {
+                    text-decoration: underline white;
+                    opacity: 60%;
                 }
             }
+
+
+
         }
 
     }
@@ -52,8 +45,9 @@ header {
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-transform: capitalize;
             font-size: 25px;
-            font-weight: bold;
+            font-weight: $negra;
             color: rgb(64, 63, 64);
+           
         }
 
         a {

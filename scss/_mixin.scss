@@ -1,0 +1,22 @@
+@mixin anclas {
+    display: flex;
+    align-items: $centro;
+}
+
+@mixin cajas {
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border: 10px $color double;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+@mixin cajaTexto{
+    text-align: $centro;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.804);
+    font-weight: 400;
+    margin-top: 90px;
+    padding: 10px;
+}

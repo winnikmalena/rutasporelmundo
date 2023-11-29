@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinos - RutasMundo</title>
+    <title>Destinos - Rutas por el Mundo</title>
     <meta name="description"
         content="Descubre los destinos más fascinantes del mundo. Desde exóticas playas hasta encantadoras ciudades, encuentra la inspiración para tu próximo viaje. Explora guías detalladas, consejos únicos y recomendaciones para vivir experiencias inolvidables en cada rincón del planeta. ¡Prepárate para una aventura inigualable!">
     <meta name="keywords" content="destinos, viajes, lugares, turismo, experiencias, aventuras, guías de viaje">
+    <!--ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- CSS BT -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,20 +18,26 @@
 </head>
 
 <body>
-    <header>
+    <header class="navbar navbar-expand-lg encabezado">
         <div>
             <a href="../index.html">
                 <img class="logoPrincipal" src="../imagenes/logo-removebg-preview.png" alt="Logo de la página">
-                <h2 class="nombreBlog">Rutas del Mundo por Melanie</h2>
             </a>
+            <h2>Rutas del Mundo por Melanie</h2>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="planifica.html">Planifica</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="viajarsola.html">Viajar Sola</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
+                <li class="nav-item"> <a class="nav-link" href="planifica.html">Planifica</a></li>
+                <li class="nav-item"> <a class="nav-link" href="destinos.html"> Destinos </a></li>
+                <li class="nav-item"> <a class="nav-link" href="viajarsola.html">Viajar Sola</a></li>
+                <li class="nav-item"> <a class="nav-link" aria-disabled="true" href="contacto.html">Contacto</a>
+                </li>
             </ul>
 
         </nav>
@@ -48,15 +56,28 @@
         </iframe>
 
 
-        <div class="continentes">
+        <div class=" elementor-toggal continentes" >
             <p>Asia </p>
-            <p>África </p>
+            <p>África</p>
             <p>Oceanía</p>
             <p>América</p>
             <p>Europa</p>
         </div>
 
+        <div class="mapas animate__animated  animate__rotateInUpRight">
+            <h2>Mapas con indicadores</h2>
+            <a href="https://maps.app.goo.gl/2CSmKTpCakx6kkiKA" target="_blank">Mapa de New York</a>
+            <a href="https://maps.app.goo.gl/enm5gL4BHTTEQP1b9" target="_blank">Estambul</a>
+            <a href="https://maps.app.goo.gl/fZoHv1uqZCYZE9rp8" target="_blank">Suiza</a>
+            <a href="https://maps.app.goo.gl/yiafcwXk6bYhfztG6" target="_blank">Luxemburgo</a>
+            <a href="https://maps.app.goo.gl/nWXb9pbet2KovGLv8" target="_blank">Genova</a>
+            <a href="https://maps.app.goo.gl/A338ffXfpXCqtQNN8" target="_blank">Valencia</a>
+            <a href="https://maps.app.goo.gl/CxHXaDsmESDqQ15U6" target="_blank">Roma</a>
+            <a href="https://maps.app.goo.gl/45uGWzon8o6cfB45A" target="_blank">Dublin</a>
+    
+        </div>
     </main>
+        
 
 
     <footer>
@@ -84,9 +105,9 @@
             <div>
                 <h4 class="footerT">Principales atracciones turísticas</h4>
                 <ul class="footerP">
-                    <li>todavia nose</li>
-                    <li>dos</li>
-                    <li>tres</li>
+                    <li>La Torre Effiel</li>
+                    <li>El Coliseo</li>
+                    <li>El Gran Cañon</li>
                 </ul>
             </div>
 
