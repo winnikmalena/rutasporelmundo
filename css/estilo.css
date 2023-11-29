@@ -298,10 +298,9 @@ main .continentes {
   }
 }
 main .mapas {
-  border: 3px black groove;
   margin: 30px;
   text-align: center;
-  background-image: linear-gradient(to left, #AD98AE, #564271);
+  background-image: linear-gradient(to right bottom, #49a09d, #5f2c82);
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -313,6 +312,7 @@ main .mapas h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   margin: 10px;
+  font-weight: 800;
 }
 main .mapas a {
   font-weight: 400;
